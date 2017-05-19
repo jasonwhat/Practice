@@ -22,7 +22,7 @@ a {
 }
 a:focus,
 a:hover {
-    color: #7bd0c1;
+    color: #18CD81;
     text-decoration: none;
     border:none;
 }
@@ -59,7 +59,17 @@ blockquote {
     box-sizing: border-box;
     margin: 1.75em 0;
     padding: 0 0 0 1.75em;
-    border-left: #4A4A4A .4em solid
+    border-left: #51D1EB .4em solid
+    background: #141B57;
+    font-size: 24px;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
 blockquote p {
     margin: .8em 0;
@@ -68,7 +78,7 @@ blockquote p {
 blockquote small {
     margin: .8em 0 .8em 1.5em;
     font-size: .9em;
-    color: #CCC
+    color: #18CD81
 }
 hr {
     height: 1px;
@@ -95,7 +105,7 @@ header #nav li {
 }
 header #nav li a {
     display: block;
-    color: #3A4145;
+    color: #7A72CF;
     font-size: 18px;
     padding: 10px 25px;
     border: 2px solid transparent;
@@ -108,7 +118,7 @@ header #nav li a {
 header #nav li a:hover {
     border: 2px solid #fff;
     border-radius: 5px;
-    color: #fff;
+    color: #18CD81;
 }
 header .banner {
     margin: 30px auto
@@ -120,16 +130,16 @@ header .banner img {
     margin-bottom: 0.8em;
 }
 header .banner h1 {
-    color: #fff;
+    color: #141B57;
     font-size: 4.85em;
     margin-bottom: 0.8em
 }
 header .banner h1 a {
-    color: #fff;
+    color: #51D1EB;
     border: none;
 }
 header .banner h2 {
-    color: #fff;
+    color: #141B57;
     font-size: 1.3em;
     font-style: italic;
     font-weight: 300;
