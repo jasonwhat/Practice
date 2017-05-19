@@ -367,7 +367,7 @@ footer a {
 ===============================================================================
 */
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1500px) {
     .index-wrapper section#timeline article:nth-child(n) div.inner {
         float: right
     }
