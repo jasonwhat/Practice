@@ -377,7 +377,7 @@ footer a {
 ===============================================================================
 */
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1700px) {
     .index-wrapper section#timeline article:nth-child(n) div.inner {
         float: right
     }
@@ -435,4 +435,52 @@ footer a {
     .box {
         width: 90%;
     }
+    div#fade-container{
+			max-width: 900px;
+			margin: auto;
+			position:relative;
+			line-height: 1.3;
+		}
+
+		div#fade-content{
+			max-height: 230px;
+			overflow: hidden;
+		}
+
+		div#fade-content.full{
+			max-height: none;
+		}
+
+		.fade-anchor {
+			background: -webkit-linear-gradient(top,rgba(237,239,240,0),rgba(237,239,240,0) 170px,#edeff0 200px);
+			background: linear-gradient(to bottom,rgba(237,239,240,0),rgba(237,239,240,0) 170px,#edeff0 200px);
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			cursor: pointer;
+			display: block;
+			height: 230px;
+			padding-top: 200px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			text-align: center;
+			-webkit-transition: background 150ms ease-in;
+			transition: background 150ms ease-in;
+		}
+
+		.fade-anchor-text {
+			background: #edeff0;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border-radius: 9pt 9pt 0 0;
+			color: #8c8c8c;
+			display: inline-block;
+			max-width: 100%;
+			overflow: hidden;
+			padding: 10px;
+			text-decoration: underline;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
 }
