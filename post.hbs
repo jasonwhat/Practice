@@ -10,16 +10,16 @@
         {{#if image}}<img class="cover-img" src="{{image}}">{{/if}}
         <h1>{{title}}</h1>
         <div class="post-date">{{date format="MMMM DD, YYYY"}}{{#if tags}} // {{tags separator=", " prefix="Tagged in: "}}{{/if}}</div>
-
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
         {{content}}
-
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
         {{#is "post"}}
         <div class="box">
             {{#author}}
             <img class="author" src="{{image}}">
             {{/author}}
             <div class="more-posts">
-                <h3 class="moreit">Keep Reading</h3>
+                <h3 class="moreit">More Posts</h3>
                 {{#prev_post}}
                 <p>Prev:&nbsp;
                     <a href="{{url}}">{{title}}</a></p>

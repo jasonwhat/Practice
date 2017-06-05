@@ -11,19 +11,23 @@
                     <span class="year">{{date format="YYYY"}}</span>
                     </span>
                     <a href="{{url}}">
+                    <div class="title">
+                      <h2>{{{title}}}</h2>
+                    </div>
                         {{#if image}}
                         <img src="{{image}}" />
                         {{/if}}
-                        <h2>{{{title}}}</h2>
                         </a>
-                        <div id="fade-container">
-			<div id="fade-content">
+                      <div class="jrm-truncate" data-lines="-1">
                         {{content}}
                       </div>
-                      <div class="fade-anchor"><span class="fade-anchor-text">uncover</span></div>
-		</div>
+                    <hr/>
+                    <div class="share">
+                    <div class="addthis_inline_share_toolbox" data-url="{{url absolute="true"}}" data-title="{{meta_title}}" data-description="{{meta_description}}" data-media="{{image}}"></div>
+                    <br/>
+                    <a href="{{url absolute="true"}}">Permalink</a>
+                      </div>
                 </div>
-
             </article>
             {{/foreach}}
         </section>

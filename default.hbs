@@ -12,11 +12,12 @@
 
     <link rel="stylesheet" href="{{asset "css/style.css"}}">
     <link rel="stylesheet" href="{{asset "css/subbscribe.css"}}">
+    <link rel="stylesheet" href="{{asset "readmore/css/advanced-read-more.min.css"}}">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700">
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{@blog.logo}}">
-    <link rel="shortcut icon" href="{{@blog.logo}}"> 
+    <link rel="shortcut icon" href="{{@blog.logo}}">
     {{#is "home,tag"}}
     <style>
         header {
@@ -30,7 +31,7 @@
             text-align: center;
         }
         header #nav li a {
-            color: #fff;
+            color: #141B57;
         }
         @media screen and (max-width:600px) {
             header {
@@ -74,6 +75,14 @@
     <script src="{{asset "js/subbscribe.min.js"}}"></script>
     <script src="{{asset "js/infinitescroll.min.js"}}"></script>
     <script src="{{asset "js/index.js"}}"></script>
+    <script src="{{asset "readmore/js/advanced-read-more.js"}}"></script>
+    <script>
+      $('body').readMore({
+          linkCaption: 'uncover this story',
+          linkCloseCaption: 'show less',
+          linkHint: 'keep reading'
+      });
+  </script>
 
 </body>
 
