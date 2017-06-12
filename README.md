@@ -1,37 +1,31 @@
-# Practice
+# Practice Uncover
 
-![Practice Theme Demo](https://github.com/Dennis-Mayk/Practice/blob/master/preview.gif)
+![Practice Uncover Theme Demo](https://github.com/jasonwhat/Practice/blob/master/preview.gif)
+<br/>
+This theme is for use on [uncover.fyi](https://uncover.fyi)
 <br>
-A clean timeline theme for the Ghost CMS.
+This is a fork of [Practice](https://github.com/Dennis-Mayk/Practice), a clean timeline theme for the [Ghost CMS](http://ghost.org).
 This theme has been build from the ground up with a focus on only the most essential elements to keep the user experience smooth and fast.
 
 ## Installation
-Just download an instance of <b>Practice</b> to your ghost's theme folder (you eventually will need to restart ghost).
+Just download an instance of <b>Practice Uncover</b> to your ghost's theme folder (you eventually will need to restart ghost). You can grab zip files of the first [alpha release v.0.0.2](https://github.com/jasonwhat/Practice/releases/tag/v0.0.2)
 
 Please select an even number of posts per page in the pagination settings in your ghost dashboard for perfect pagination performance.
 
-## Release notice
-<code>
-08.01.2017 Fixed tag page error + updated stylesheet and preview gif
-</code><br>
-<code>
-05.01.2017 Fix ghost pro errors, make more generic for others to use - by <a href="https://github.com/xdumaine">xdumaine</a>
-</code><br>
-<code>
-30.07.2016 Practice now uses <a href="https://github.com/infinite-scroll/infinite-scroll">infinite scroll</a> for pagination v1.4 
-</code><br>
-<code>
-27.07.2016 Changed typography, navigation and allows now background images v1.3 
-</code><br>
-<code>
-10.07.2016 Added footer section for credits v.1.2
-</code><br>
-<code>
-06.07.2016 PageSpeed optimized v.1.1
-</code><br>
-<code>
-01.07.2016 Release of Practice v.1.0
-</code>
+## Key changes from original
+- The timeline defaults to one column, similar to mobile view. This was achieved by changing the @media screen max-width to 1700px, everything below that will render one column.
+- Used Jquery and Js to only show first to paragraphs of each post on homepage unless they have internal tags #ad, #expand, or #feature. The latter only shows an excerpt.
+- Updated colors
+- Changed font to Merriweather for text and Raleway for H tags
+- Inserted AddThis for sharing functionality, including on the homepage
+- Added tag.description the tag pages
+
+## Colors
+- Emerald #18CD81
+- Sky Blue #51D1EB
+- Gulf Blue #141B57
+- Moody Blue #7A72CF
+
 
 ## Contributors - many thanks to you!
 [xdumaine](https://github.com/xdumaine) | [Br3nda](https://github.com/Br3nda)
