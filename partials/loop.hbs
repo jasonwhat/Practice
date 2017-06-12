@@ -2,6 +2,7 @@
 
         <section id="timeline">
             {{#foreach posts}}
+
             <article class="article">
 
                 <div class="inner">
@@ -18,9 +19,23 @@
                         <img src="{{image}}" />
                         {{/if}}
                         </a>
-                      <div class="jrm-truncate" data-lines="-1">
-                        {{content}}
-                      </div>
+                    {{!-- If show full post --}}
+                    {{#has tag="#expand,#ad"}}
+                      {{content}}
+
+                      {{else}}
+                      {{!-- If is long post with excerpt --}}
+                      {{#has tag="#long"}}
+                      <p>{{meta_description}}...<a href="{{url}}">Keep Reading</a></p>
+
+                      {{else}}
+                        {{!-- If regular post with read more --}}
+                        <div class="article">
+                         {{content}}
+                       </div>
+
+                     {{/has}}
+                     {{/has}}
                     <hr/>
                     <div class="share">
                     <div class="addthis_inline_share_toolbox" data-url="{{url absolute="true"}}" data-title="{{meta_title}}" data-description="{{meta_description}}" data-media="{{image}}"></div>
@@ -29,6 +44,7 @@
                       </div>
                 </div>
             </article>
+
             {{/foreach}}
         </section>
 

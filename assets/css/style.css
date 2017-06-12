@@ -6,7 +6,7 @@ Url: https://tilligetthere.com
 */
 
 body {
-    font-family: Lora, sans-serif;
+    font-family: 'Merriweather', serif;
     background: #f5f5f5;
     color: #3A4145;
 }
@@ -33,7 +33,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: inherit;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.1;
     color: inherit;
     margin-top: 10px;
@@ -60,7 +60,7 @@ blockquote {
     margin: 1.75em 0;
     padding: 0 0 0 1.75em;
     border-left: #7A72CF .4em solid
-    background: #141B57;
+    background-color: #141B57;
     font-size: 24px;
 }
 blockquote:before {

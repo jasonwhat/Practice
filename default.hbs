@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{asset "css/subbscribe.css"}}">
     <link rel="stylesheet" href="{{asset "readmore/css/advanced-read-more.min.css"}}">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i|Raleway:300|Lora:400,700" rel="stylesheet">
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{@blog.logo}}">
     <link rel="shortcut icon" href="{{@blog.logo}}">
@@ -62,11 +62,14 @@
 </head>
 
 <body>
-
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLDVW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     {{{body}}}
 
     <footer>
-        Theme by <a href="https://github.com/Dennis-Mayk/Practice/">Dennis</a>
+        A <a href="http://corelab.co">Corelab</a> collaboration
     </footer>
 
     {{ghost_foot}}
@@ -75,13 +78,9 @@
     <script src="{{asset "js/subbscribe.min.js"}}"></script>
     <script src="{{asset "js/infinitescroll.min.js"}}"></script>
     <script src="{{asset "js/index.js"}}"></script>
-    <script src="{{asset "readmore/js/advanced-read-more.js"}}"></script>
+    <script src="{{asset "js/readMore.js"}}"></script>
     <script>
-      $('body').readMore({
-          linkCaption: 'uncover this story',
-          linkCloseCaption: 'show less',
-          linkHint: 'keep reading'
-      });
+      $(".article").readMore();
   </script>
 
 </body>
